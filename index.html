@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS EXTERNO -->
      <link rel="stylesheet" href="./src/css/estilo.css">
+     <!-- API EXTERNA -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.0.2/dist/tesseract.min.js"></script>
     <title>Scanner</title>
 </head>
 <body>
+
+    <header>
+        <h1>SCANNER DE TEXTO</h1>
+    </header>
+    <main>
+        <div class="container">
+            <video id="video" autoplay></video>
+            <canvas id="canvas"></canvas>
+            <button id="btn-texto">Ler Texto</button>
+            <div id="saida">Lendo o texto...</div>          
+        </div>
+    </main>
     
     <!-- JS EXTERNO -->
      <script src="./src/js/script.js"></script>
